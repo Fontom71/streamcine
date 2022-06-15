@@ -1,6 +1,6 @@
 ﻿const MESSAGES = {
   COMMANDS: {
-    SAY_EMBED: {
+    EMBED: {
       name: "embed",
       aliases: "",
       permissions: ["MANAGE_MESSAGES"],
@@ -12,8 +12,14 @@
       permissions: ["MANAGE_MESSAGES"],
       description: "",
     },
-    TEST: {
+    FORM: {
       name: "form",
+      aliases: "",
+      permissions: ["MANAGE_MESSAGES"],
+      description: "",
+    },
+    SEARCH: {
+      name: "search",
       aliases: "",
       permissions: ["MANAGE_MESSAGES"],
       description: "",

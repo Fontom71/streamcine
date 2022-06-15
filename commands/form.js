@@ -24,6 +24,7 @@ module.exports.run = async (client, commande, message, args) => {
         .setCustomId("addFilmTitle")
         .setLabel("Titre du film/série")
         .setStyle("SHORT") //IMPORTANT: 'SHORT' or 'LONG'
+        .setMaxLength(256)
         .setPlaceholder("Insérez le titre du film/série")
         .setRequired(true)
     )
@@ -48,6 +49,7 @@ module.exports.run = async (client, commande, message, args) => {
         .setCustomId("addFilmSalon")
         .setLabel("Salon")
         .setStyle("SHORT") //IMPORTANT: 'SHORT' or 'LONG'
+        .setMaxLength(18)
         .setPlaceholder("Insérez l'ID du salon")
         .setRequired(true)
     );
@@ -62,4 +64,4 @@ module.exports.run = async (client, commande, message, args) => {
   });
 };
 
-module.exports.help = MESSAGES.COMMANDS.TEST;
+module.exports.help = MESSAGES.COMMANDS.FORM;

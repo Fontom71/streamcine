@@ -21,6 +21,8 @@ module.exports.run = async (client, commande, message, args) => {
     return message.channel.send(
       "Tu as entré des informations en trop, vérifie ton message !"
     );
+  if (messageToBot[0].length > 256)
+    return message.channel.send("Le titre est trop long !");
 
   const Sembed = new MessageEmbed()
     .setTitle(messageToBot[0])
@@ -45,4 +47,4 @@ module.exports.run = async (client, commande, message, args) => {
   });
 };
 
-module.exports.help = MESSAGES.COMMANDS.SAY_EMBED;
+module.exports.help = MESSAGES.COMMANDS.EMBED;
